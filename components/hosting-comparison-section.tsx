@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
+// import { Badge } from '@/components/ui/badge';
 import { Check, X, Server, Cloud, Database, Shield } from 'lucide-react';
 import Link from 'next/link';
 import { useLanguage } from '@/components/language-toggle';
@@ -143,7 +143,7 @@ export function HostingComparisonSection() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Card className={`glass-morphism border border-white/10 ${plan.popular ? 'ring-2 ring-purple-500' : ''}`}>
+                <Card className={`glass-morphism border border-white/10`}>
                   <CardHeader>
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-3">
@@ -153,9 +153,6 @@ export function HostingComparisonSection() {
                           <p className="text-sm text-gray-300">{plan.description}</p>
                         </div>
                       </div>
-                      {plan.popular && (
-                        <Badge className="bg-purple-600 text-white">Popular</Badge>
-                      )}
                     </div>
                     <div className="text-2xl font-bold text-white">{plan.price}</div>
                   </CardHeader>
@@ -218,7 +215,7 @@ export function HostingComparisonSection() {
                     <div className={`flex items-center justify-center space-x-2 mb-2 ${plan.popular ? 'relative' : ''}`}>
                       {plan.popular && (
                         <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                          <Badge className="bg-purple-600 text-white text-xs">Popular</Badge>
+                          {/* <Badge className="bg-purple-600 text-white text-xs">Popular</Badge> */}
                         </div>
                       )}
                       <Icon className={`h-5 w-5 ${plan.color}`} />

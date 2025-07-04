@@ -138,7 +138,7 @@ export function Header() {
       transition={{ duration: 0.6 }}
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-20 gap-4 lg:gap-6 min-w-0">
           {/* Logo */}
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Link href="/" className="flex items-center space-x-3 group">
@@ -161,7 +161,7 @@ export function Header() {
                   />
                 </motion.div>
 
-                <div className="absolute -inset-1 bg-blue-600/20 rounded-full blur-sm group-hover:bg-blue-600/30 transition-all"></div>
+                <div className="absolute -inset-1  rounded-full blur-sm group-hover:bg-blue-600/30 transition-all"></div>
               </div>
               <span className="text-3xl font-bold gradient-text">WAFRA</span>
             </Link>
@@ -305,12 +305,7 @@ export function Header() {
                 >
                   <Button
                     variant="ghost"
-                    className={cn(
-                      "transition-all",
-                      isScrolled
-                        ? "text-gray-700 hover:text-blue-600 hover:bg-blue-50"
-                        : "text-white hover:text-blue-200 hover:bg-white/10"
-                    )}
+                    className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-xl hover:shadow-2xl transition-all duration-300"
                     asChild
                   >
                     <Link href="/login">{t("login")}</Link>
@@ -320,12 +315,12 @@ export function Header() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Button
+                  {/* <Button
                     className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-xl hover:shadow-2xl transition-all duration-300"
                     asChild
                   >
                     <Link href="/register">{t("getStarted")}</Link>
-                  </Button>
+                  </Button> */}
                 </motion.div>
               </>
             )}
