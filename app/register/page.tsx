@@ -46,7 +46,7 @@ export default function Register() {
   const strength = passwordStrength(formData.password);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-900 via-blue-900 to-purple-900 relative overflow-hidden p-20">
+    <div className="min-h-screen bg-gradient-to-br from-green-900 via-blue-900 to-purple-900 relative overflow-hidden px-4 sm:px-8 md:px-12 lg:px-20 py-12 pt-12">
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -left-40 w-80 h-80 bg-green-500/20 rounded-full blur-3xl animate-pulse"></div>

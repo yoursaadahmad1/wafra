@@ -370,7 +370,7 @@ export function Header() {
         <AnimatePresence>
           {isMobileMenuOpen && (
             <motion.div
-              className="lg:hidden border-t glass-morphism border-gray-200/50 shadow-2xl overflow-y-auto max-h-[80vh]"
+              className="lg:hidden border-t border-gray-200/50 bg-white shadow-2xl overflow-y-auto max-h-[80vh]"
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
