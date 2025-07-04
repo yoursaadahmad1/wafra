@@ -298,7 +298,7 @@ export const translations = {
     moneyBackGuarantee: 'ضمان استرداد الأموال لمدة 30 يوماً',
     readyToGetStarted: 'مستعد للبدء؟',
     joinThousands: 'انضم إلى آلاف العملاء الراضين الذين يثقون في الوفرة لاحتياجات الاستضافة. ابدأ تجربتك المجانية اليوم مع ضمان استرداد الأموال لمدة 30 يوماً.',
-    startFreeTrial: 'ابدأ تجربة مجانية',
+    // startFreeTrial: 'ابدأ تجربة مجانية',
     setupInMinutes: 'إعداد في أقل من 5 دقائق',
   }
 };

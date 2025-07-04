@@ -9,7 +9,7 @@ const dashboardTranslations = {
     websites: 'Websites',
     services: 'Services',
     billing: 'Billing',
-    marketplace: 'Marketplace',
+    // marketplace: 'Marketplace',
     settings: 'Settings',
     
     // Descriptions
@@ -94,7 +94,7 @@ const dashboardTranslations = {
     featuredProducts: 'Featured Products',
     
     // Settings
-    accountSettings: 'Settings',
+    // accountSettings: 'Settings',
     manageAccountSettings: 'Manage your account settings and preferences',
     profileInformation: 'Profile Information',
     password: 'Password',
@@ -214,13 +214,13 @@ const dashboardTranslations = {
     invoiceHistory: 'تاريخ الفواتير',
     
     // Marketplace
-    marketplace: 'المتجر',
+    // marketplace: 'المتجر',
     discoverAddons: 'اكتشف واشتري الإضافات لتحسين تجربة الاستضافة',
     browseCategories: 'تصفح الفئات',
     featuredProducts: 'المنتجات المميزة',
     
     // Settings
-    accountSettings: 'الإعدادات',
+    // accountSettings: 'الإعدادات',
     manageAccountSettings: 'إدارة إعدادات حسابك وتفضيلاتك',
     profileInformation: 'معلومات الملف الشخصي',
     password: 'كلمة المرور',

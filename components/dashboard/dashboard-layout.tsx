@@ -335,7 +335,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
                 >
                   <Icon className={`h-5 w-5 ${stat.color} mx-auto mb-1`} />
                   <div className="text-lg font-bold text-gray-900">{stat.value}</div>
-                  <div className="text-xs text-gray-600">{t(stat.label)}</div>
+                  <div className="text-xs text-gray-600">{t(stat.label as any)}</div>
                 </motion.div>
               );
             })}
@@ -373,12 +373,12 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
                             isActive ? "text-white" : `${item.color} group-hover:text-blue-600`
                           )} />
                           <div>
-                            <div className="font-medium">{t(item.name)}</div>
+                            <div className="font-medium">{t(item.name as any)}</div>
                             <div className={cn(
                               "text-xs",
                               isActive ? "text-blue-100" : "text-gray-500 group-hover:text-blue-500"
                             )}>
-                              {t(item.description)}
+                              {t(item.description as any)}
                             </div>
                           </div>
                         </div>
@@ -418,12 +418,12 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
                         isActive ? "text-white" : `${item.color} group-hover:text-blue-600`
                       )} />
                       <div className="flex-1">
-                        <div className="font-medium">{t(item.name)}</div>
+                        <div className="font-medium">{t(item.name as any)}</div>
                         <div className={cn(
                           "text-xs",
                           isActive ? "text-blue-100" : "text-gray-500 group-hover:text-blue-500"
                         )}>
-                          {t(item.description)}
+                          {t(item.description as any)}
                         </div>
                       </div>
                     </div>

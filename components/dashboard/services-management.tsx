@@ -3,7 +3,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
+// import { Progress } from '@/components/ui/progress';
 import { 
   Server, 
   Database, 
@@ -117,10 +117,10 @@ export function ServicesManagement() {
                             {resource.used}{resource.unit} / {resource.total}{resource.unit}
                           </span>
                         </div>
-                        <Progress 
+                        {/* <Progress 
                           value={(resource.used / resource.total) * 100} 
                           className="h-2"
-                        />
+                        /> */}
                       </div>
                     ))}
                   </div>
